@@ -1,0 +1,18 @@
+var flips = prompt("How many flips?", "");
+
+heads = 0;
+tails = 0;
+
+for (x = 0; x < 10; x++){
+  var num = Math.floor(Math.random() * 100);
+  if (num >= 50){
+    heads += 1;
+  } else if (num < 50){
+    tails += 1;
+  }
+}
+console.log('Total coin flips: ', flips)
+console.log('======================')
+console.log('Heads:', heads);
+console.log('Tails', tails);
+
